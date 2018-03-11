@@ -15,39 +15,30 @@
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-                <div class="navbar-header navbar-brand navbar-name col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    Kavitha Veluchamy
-                </div>
-                <ul class="nav navbar-nav navbar-right col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <li>
-                        <a href="#">About </a>
-                    </li>
-                    <li>
-                        <a>|</a>
-                    </li>
-                    <li>
-                        <a href="">Portfolio</a>
-                    </li>
-                    <li>
-                        <a>|</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
+            <header class="navbar-header navbar-brand navbar-name col-xs-12 col-sm-3 col-md-3 col-lg-3">Kavitha Veluchamy</header>
+            <ul class="nav navbar-nav navbar-right col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <li class="nav-item divider-vertical ">
+                    <a href="#">About </a>
+                </li>
+                <li class="nav-item divider-vertical ">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 content">
                 <h1 class="page-header page-header-style">About Me</h1>
                 <div class="row">
-                    <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="assets/imgs/profile.jpg" alt="Kavitha Veluchamy" class="thumbnail thumbnail-style img-responsive">
-                    </div>
-                    <div class=" col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <p class="caption caption-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    <div class="content-style">
+                        <img src="assets/imgs/profile.jpg" alt="Kavitha Veluchamy" class="thumbnail-style img-responsive">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                             et dolore magna aliqua. Adipiscing diam donec adipiscing tristique risus. Sit amet nisl purus
                             in mollinunc sed id. Tristique magna sit amet purus. Fames ac turpis egestas sed. Etiam non quam
                             lacus suspendisse faucibus interdum posuere. Commodo elit at imperdiet dui accumsan sit amet
@@ -56,11 +47,12 @@
                             sit amet. Feugiat scelerisque varius morbi enim nunc faucibus a. In metus vulputate eu scelerisque
                             felis imperdiet proin fermentum. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu.
                             Eu lobortis elementum nibh tellus molestie nunc.</p>
-                            <p class="caption caption-style">Iaculis urna id volutpat lacus laoreet non curabitur
-                            gravida. Nunc vel risus commodo viverra maecenas accumsan lacus vel. Praesent tristique magna
-                            sit amet. Feugiat scelerisque varius morbi enim nunc faucibus a. In metus vulputate eu scelerisque
-                            felis imperdiet proin fermentum. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu.
-                            Eu lobortis elementum nibh tellus molestie nunc.</p>
+                        <p>Iaculis urna id volutpat lacus laoreet non curabitur gravida. Nunc vel risus commodo viverra maecenas
+                            accumsan lacus vel. Praesent tristique magna sit amet. Feugiat scelerisque varius morbi enim
+                            nunc faucibus a. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Sit amet
+                            commodo nulla facilisi nullam vehicula ipsum a arcu. Eu lobortis elementum nibh tellus molestie
+                            nunc.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -72,12 +64,14 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-xs-12 panel-body-style">
-
-                                <img src="assets/imgs/git.png" class="panel-navbar-img">
-                                <img src="assets/imgs/linkedin.png" class="panel-navbar-img">
-                                <img src="assets/imgs/stackoverflow.png" class=" panel-navbar-img">
-
-
+                                <a href="http://www.github.com" target="_blank">
+                                    <img src="assets/imgs/git.png" class="panel-navbar-img">
+                                </a>
+                                <a href="http://www.linkedin.com" target="_blank">
+                                    <img src="assets/imgs/linkedin.png" class="panel-navbar-img">
+                                </a>
+                                <a href="http://www.stackoverflow.com" target="_blank">
+                                    <img src="assets/imgs/stackoverflow.png" class=" panel-navbar-img"> </a>
                             </div>
                         </div>
                     </div>
@@ -85,6 +79,11 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">&copy; copyright 2018 Kavitha Veluchamy</p>
+        </div>
+    </footer>
 </body>
 
 </html>

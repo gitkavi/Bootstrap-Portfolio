@@ -1,11 +1,38 @@
 
+body{
+    background-color: #cccccc;
+    padding-bottom: 60px;
+}
 .navbar-name{
 background-color: #4aaaa5;
 color:#ffffff !important;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: bold;
 text-align: center;
-display:inline-block;
+}
+@media screen and (max-width:980px){
+    .panel{
+        width:50%;
+    }
+}
+@media screen and (max-width:768px){
+    .navbar-name{
+        width:50%;
+        height:50%;
+    }
+    .panel{
+        width:80%;
+    }
+}
+@media screen and (max-width:640px){
+   .navbar-name{
+        width:100%;
+        height:50%;
+    }
+    .navbar ul{
+        width:100%;
+        text-align: center;
+    }
 }
 .navbar .navbar-brand:hover{
     background-color: #4aaaa5;
@@ -16,6 +43,11 @@ display:inline-block;
 }
 .navbar li{
     display:inline-block;
+}
+
+.navbar .divider-vertical {
+    margin: 0 9px;
+    border-right: 1px solid #ffffff;
 }
 .page-header-style{
     color:#4aaaa5;
@@ -32,15 +64,53 @@ display:inline-block;
     text-align: center;
 }
 
+.content{
+    width:70%;
+    border-color: #dddddd;
+    background-color: #ffffff;
+    height:auto;
+}
+.content-style{
+    margin:15px;
+
+}
+.contact-content-style{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    padding:20px;
+    line-height: 1.5;
+}
+
+.contact-content-style input{
+    width:100%;
+    height:20px;
+    margin-bottom: 20px;
+    padding: 15px 10px; 
+}
+
+.contact-content-style textarea{
+    width:100%;
+    height:200px;
+    margin-bottom: 20px;
+}
+
+.contact-content-style button{
+    background-color: #4aaaa5;
+    color:#ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+    padding:10px 32px;
+    border:none;
+    font-size:16px;
+}
 .thumbnail-style{
     float: left;
     clear: both;
+    width:300px;
+    height:250px;
+    margin:0 10px 10px 10px;
 }
 
-.caption-style{
-    float: left;
-    clear: both;
-}
 .panel-navbar-img{
     width:50px;
     height:50px;
@@ -48,4 +118,34 @@ display:inline-block;
 .panel-body-style{
     text-align: center;
     white-space: nowrap;
+}
+ .portfolio-content{
+    display:inline-block;
+    position:relative;
+    margin-bottom: 20px;
+}
+.portfolio-content img{
+    width:90%;
+}
+.portfolio-content .img-caption{
+    text-align: center; 
+    width:90%; height:25%;
+    font-size: 20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    position:absolute; top:65%;left:0;
+    z-index:1;
+    padding:10px;
+}
+footer{
+    padding:10px;
+    background-color: #666666;
+    text-align: center;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border-top: 5px solid #4aaaa5;
+    left:0;
+    bottom:0;
+    width:100%;
+    position:fixed;
 }
